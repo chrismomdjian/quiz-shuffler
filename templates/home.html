@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <!-- page title -->
+  <div class="container text-center">
+    <h1 id="heading">QuizShuffler</h1>
+  </div>
+
+  <div class="container">
+    <div class="error-message"></div>
+  </div>
+
+  <!-- textfields -->
+  <div class="container">
+
+    <form class="row" id="questions_form">
+      <div class="col-xs-12 col-sm-12 col-md-6">
+        <label for="test_questions">Test Questions</label>
+        <textarea class="form-control" name="test_questions" id="test_questions" rows="10"></textarea>
+        
+        <br />
+
+        <button type="submit" id="shuffle_btn" class="btn btn-sm btn-primary">Shuffle Qs</button>
+
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6">
+        <label for="shuffled_questions">Shuffled Questions</label>
+        <textarea class="form-control" id="shuffled_questions" rows="10"></textarea>
+      </div>
+    </form>
+
+  </div>
+{% endblock %}
